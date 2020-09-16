@@ -1,0 +1,19 @@
+/*
+style.css
+---------
+Feuille de style relative à la maquette Réservia
+Par Tony BARTHELEMY
+*/
+body {
+	margin: 2em;
+	font-family: 'Raleway', sans-serif;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('href="https://fonts.googleapis.com/css?family=Raleway');
+	font-style: normal;
+}
+#logo {
+    width: 8em;
+}
