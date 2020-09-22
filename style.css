@@ -4,9 +4,14 @@ style.css
 Feuille de style relative à la maquette Réservia
 Par Tony BARTHELEMY
 */
+
+/* CSS Golbal : */
+
 body {
 	margin: 2em;
-	font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(39, 39, 39);
+    line-height: normal;
 }
 
 @font-face {
@@ -14,6 +19,147 @@ body {
 	src: url('href="https://fonts.googleapis.com/css?family=Raleway');
 	font-style: normal;
 }
+
+#bloc-page {
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+}
+nav a {
+    padding: 2em 1.2em 2em 1.2em;
+}
+
+a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+}
+a:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+a:active {
+    border-top: 3px solid #0065FC;
+    border
+}
+
+/* CSS spécifique : */
+
+
+#en-tête-réservia {
+    display: flex;
+    justify-content: space-between;
+}
+
 #logo {
     width: 8em;
+}
+
+#Affichage-résultats {
+    display: flex;
+}
+
+#Hébergements-Marseille {
+    flex: 2;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 2em;
+    margin: 1.2em;
+}
+
+aside {
+    flex: 1;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 2em;
+    margin: 1.2em;
+}
+
+#Classement-Marseille {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Vignette-logement-standard {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin-bottom: 2em;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.Vignette-logement-standard img {
+    width: 15em;
+    height: 7em;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.Vignette-logement-populaire {
+    display: flex;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin-bottom: 2em;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.Vignette-logement-populaire img {
+    width: 7em;
+    height: 8em;
+    border-radius: 10px 0px 0 10px;
+    object-fit: cover;
+}
+
+.Vignette-activité {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 2em;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.Vignette-activité img {
+    width: 18em;
+    max-height: 10em;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.Description-nom-tarif {
+    padding: 0.8em;
+}
+
+#Activités-Marseille {
+    display: flex;
+    margin: 1.2em;
+}
+
+#Footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 3em;
+}
+#A-propos {
+    flex: 1;
+}
+#Nos-hébergements {
+    flex: 1;
+}
+#Assistance {
+    flex: 1;
 }
