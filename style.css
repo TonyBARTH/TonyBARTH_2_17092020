@@ -125,27 +125,57 @@ aside {
     object-fit: cover;
 }
 
+#Affichage-activités {
+    display: flex;
+    flex-flow: column wrap;
+    height: 30em;
+    width: 100%;
+}
+
 .Vignette-activité {
     display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 15px;
-    margin-bottom: 2em;
+    margin: 1.2em;
+    width: 20em;
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
 }
+
 .Vignette-activité img {
-    width: 18em;
-    max-height: 10em;
-    border-radius: 10px 10px 0 0;
+    height: fit-content;
+    max-height: 22em;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
+}
+
+.Vignette-activité:nth-child(1) {
+    border: 3px solid red;
+    height: 100%;
+}
+.Vignette-activité:nth-child(2) {
+    border: 3px solid rgb(72, 185, 19);
+    height: 30%;
+}
+.Vignette-activité:nth-child(3) {
+    border: 3px solid rgb(231, 42, 175);
+    height: 40%;
+}
+.Vignette-activité:nth-child(4) {
+    border: 3px solid rgb(35, 224, 199);
+    
+}
+.Vignette-activité:nth-child(5) {
+    border: 3px solid rgb(21, 41, 218);
+    
+}
+.Vignette-activité:nth-child(6) {
+    border: 3px solid rgb(223, 209, 19);
+    
 }
 
 .Description-nom-tarif {
     padding: 0.8em;
-}
-
-#Activités-Marseille {
-    display: flex;
-    margin: 1.2em;
 }
 
 #Footer {
