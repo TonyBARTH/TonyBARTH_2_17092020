@@ -8,10 +8,8 @@ Par Tony BARTHELEMY
 /* CSS Golbal : */
 
 body {
-	margin: 2em;
     font-family: 'Raleway', sans-serif;
     color: rgb(39, 39, 39);
-    line-height: normal;
 }
 
 @font-face {
@@ -41,7 +39,7 @@ nav ul {
     display: flex;
 }
 nav a {
-    padding: 2em 1.2em 2em 1.2em;
+    padding: 1.2em;
 }
 
 a {
@@ -128,54 +126,68 @@ aside {
 #Affichage-activités {
     display: flex;
     flex-flow: column wrap;
+    justify-content: space-between;
     height: 30em;
     width: 100%;
+    background-color: thistle;
 }
 
 .Vignette-activité {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 15px;
-    margin: 1.2em;
-    width: 20em;
+    border-radius: 20px;
+    max-width: 20em;
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
-}
-
-.Vignette-activité img {
-    height: fit-content;
-    max-height: 22em;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
 }
 
 .Vignette-activité:nth-child(1) {
     border: 3px solid red;
+    background: center / cover no-repeat url("Images/activites/small/vieux-port-xs.jpg");
+    position: relative;
     height: 100%;
 }
 .Vignette-activité:nth-child(2) {
     border: 3px solid rgb(72, 185, 19);
-    height: 30%;
+    background: center / cover no-repeat url("Images/activites/small/fort-de-pomègues-xs.jpg");
+    position: relative;
+    height: 54%;
 }
 .Vignette-activité:nth-child(3) {
     border: 3px solid rgb(231, 42, 175);
-    height: 40%;
+    background: center / cover no-repeat url("Images/activites/small/ile-du-frioul-xs.jpg");
+    position: relative;
+    height: 34%;
 }
 .Vignette-activité:nth-child(4) {
     border: 3px solid rgb(35, 224, 199);
-    
+    background: center / cover no-repeat url("Images/activites/small/parc-des-calanques-xs.jpg");
+    position: relative;
+    height: 100%;
 }
 .Vignette-activité:nth-child(5) {
     border: 3px solid rgb(21, 41, 218);
-    
+    background: center / cover no-repeat url("Images/activites/small/notre-dame-de-la-garde-xs.jpg");
+    position: relative;
+    height: 40%;
 }
 .Vignette-activité:nth-child(6) {
     border: 3px solid rgb(223, 209, 19);
-    
+    background: center / cover no-repeat url("Images/activites/small/parc-longchamp-xs.jpg");
+    position: relative;
+    height: 40%;
 }
 
 .Description-nom-tarif {
-    padding: 0.8em;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+.Description-nom-tarif h3 {
+    margin-left: 1.2em;
 }
 
 #Footer {
@@ -183,6 +195,7 @@ aside {
     justify-content: space-between;
     background-color: #f2f2f2;
     padding: 3em;
+    margin-top: 3em;
 }
 #A-propos {
     flex: 1;
