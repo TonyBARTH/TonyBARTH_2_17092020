@@ -8,10 +8,14 @@ Par Tony BARTHELEMY
 /* CSS Golbal : */
 
 body {
-	margin: 2em;
     font-family: 'Raleway', sans-serif;
     color: rgb(39, 39, 39);
-    line-height: normal;
+}
+
+body, div, h1, h2, h3, img, form, header, section, aside, nav, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 @font-face {
@@ -35,6 +39,7 @@ h3 {
 
 ul {
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
 nav ul {
@@ -64,6 +69,8 @@ a:active {
 #en-tête-réservia {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
 }
 
 #logo {
@@ -72,22 +79,21 @@ a:active {
 
 #Affichage-résultats {
     display: flex;
+    justify-content: space-between;
 }
 
 #Hébergements-Marseille {
-    flex: 2;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 2em;
-    margin: 1.2em;
+    width: 60%;
 }
 
 aside {
-    flex: 1;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 2em;
-    margin: 1.2em;
+    width: 28%;
 }
 
 #Classement-Marseille {
@@ -145,7 +151,7 @@ aside {
 
 #Activités-Marseille {
     display: flex;
-    margin: 1.2em;
+    margin: 2em 0 2em 0;
 }
 
 #Footer {
