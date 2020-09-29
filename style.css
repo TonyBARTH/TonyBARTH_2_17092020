@@ -10,8 +10,17 @@ Par Tony BARTHELEMY
 body {
     font-family: 'Raleway', sans-serif;
     color: rgb(39, 39, 39);
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
+=======
+}
+
+body, div, h1, h2, h3, img, form, header, section, aside, nav, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+>>>>>>> master
 }
 
 @font-face {
@@ -35,8 +44,12 @@ h3 {
 
 ul {
     list-style-type: none;
+<<<<<<< HEAD
     padding: 0;
     margin: 0;
+=======
+    padding-inline-start: 0;
+>>>>>>> master
 }
 
 nav ul {
@@ -74,6 +87,8 @@ a:active {
 #en-tête-réservia {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
 }
 
 #logo {
@@ -82,22 +97,21 @@ a:active {
 
 #Affichage-résultats {
     display: flex;
+    justify-content: space-between;
 }
 
 #Hébergements-Marseille {
-    flex: 2;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 2em;
-    margin: 1.2em;
+    width: 60%;
 }
 
 aside {
-    flex: 1;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 2em;
-    margin: 1.2em;
+    width: 28%;
 }
 
 #Classement-Marseille {
@@ -198,8 +212,15 @@ aside {
     width: 100%;
     border-radius: 0 0 20px 20px;
 }
+<<<<<<< HEAD
 .Description-nom-tarif h3 {
     margin-left: 1.2em;
+=======
+
+#Activités-Marseille {
+    display: flex;
+    margin: 2em 0 2em 0;
+>>>>>>> master
 }
 
 #Footer {
