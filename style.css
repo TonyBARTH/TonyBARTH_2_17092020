@@ -35,8 +35,16 @@ h1, h2 {
     font-size: 1.3em;
     font-weight: bold;
 }
+h2 {
+    margin: 1em;
+}
+
 h3 {
     font-size: 1em;
+}
+p {
+    font-size: 14px;
+    line-height: 0.5;
 }
 
 ul {
@@ -102,26 +110,29 @@ nav ul li:hover{
 }
 
 #Hébergements-Marseille {
+    width: 70%;
+    margin: 1.2em;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 2em;
-    width: 60%;
+    padding: 1.2em;
 }
 
 aside {
+    width: 30%;
+    margin: 1.2em;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 2em;
-    width: 28%;
 }
 
 #Classement-Marseille {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .Vignette-logement-standard {
+    width: 28%;
     background-color: white;
     border: 5px solid white;
     border-radius: 15px;
@@ -129,7 +140,7 @@ aside {
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .Vignette-logement-standard img {
-    width: 15em;
+    width: 100%;
     height: 7em;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
@@ -156,53 +167,47 @@ aside {
     justify-content: space-between;
     height: 30em;
     width: 100%;
-    background-color: thistle;
 }
 
 .Vignette-activité {
     display: flex;
     flex-direction: column;
     background-color: white;
+    margin: 0 1.2em 0 1.2em;
     border-radius: 20px;
     max-width: 20em;
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .Vignette-activité:nth-child(1) {
-    border: 3px solid red;
     background: center / cover no-repeat url("Images/activites/small/vieux-port-xs.jpg");
     position: relative;
     height: 100%;
 }
 .Vignette-activité:nth-child(2) {
-    border: 3px solid rgb(72, 185, 19);
     background: center / cover no-repeat url("Images/activites/small/fort-de-pomègues-xs.jpg");
     position: relative;
     height: 54%;
 }
 .Vignette-activité:nth-child(3) {
-    border: 3px solid rgb(231, 42, 175);
     background: center / cover no-repeat url("Images/activites/small/ile-du-frioul-xs.jpg");
     position: relative;
-    height: 34%;
+    height: 38%;
 }
 .Vignette-activité:nth-child(4) {
-    border: 3px solid rgb(35, 224, 199);
     background: center / cover no-repeat url("Images/activites/small/parc-des-calanques-xs.jpg");
     position: relative;
     height: 100%;
 }
 .Vignette-activité:nth-child(5) {
-    border: 3px solid rgb(21, 41, 218);
     background: center / cover no-repeat url("Images/activites/small/notre-dame-de-la-garde-xs.jpg");
     position: relative;
-    height: 40%;
+    height: 46%;
 }
 .Vignette-activité:nth-child(6) {
-    border: 3px solid rgb(223, 209, 19);
     background: center / cover no-repeat url("Images/activites/small/parc-longchamp-xs.jpg");
     position: relative;
-    height: 40%;
+    height: 46%;
 }
 
 .Description-nom-tarif {
@@ -234,4 +239,45 @@ aside {
 }
 #Assistance {
     width: 15em;
+}
+
+/* CSS RESPONSIVE : */
+
+@media (max-width: 1050px) {
+    #Affichage-résultats {
+        flex-direction: column;
+    }
+    #Hébergements-Marseille {
+        width: auto;
+    }
+    aside {
+        width: auto;
+    }
+    .Vignette-logement-populaire img {
+        width: 12em;
+    }
+    #Affichage-activités {
+        height: 60em;
+    }
+    .Vignette-activité {
+        max-width: none;
+    }
+    .Vignette-activité:nth-child(1) {
+        height: 25em;
+    }
+    .Vignette-activité:nth-child(2) {
+        height: 16em;
+    }
+    .Vignette-activité:nth-child(3) {
+        height: 14em;
+    }
+    .Vignette-activité:nth-child(4) {
+        height: 25em;
+    }
+    .Vignette-activité:nth-child(5) {
+        height: 14em;
+    }
+    .Vignette-activité:nth-child(6) {
+        height: 16em;
+    }
 }
