@@ -116,22 +116,39 @@ nav ul li:hover{
     background-color: #f2f2f2;
     border-radius: 15px 0 0 15px;
 }
-input:matches([type="search"]) {
+input {
     padding: 0;
+    height: 100%;
+    font-size: 16px;
+    border-color: unset;
+    border-style: unset;
+}
+input:matches([type="search"]) {
     margin: 0;
     width: 18em;
-    height: 100%;
     border-style: inset;
     border: 1px solid #f2f2f2;
-    font-size: 16px;
 }
 input:matches([type="submit"]) {
     padding: 0;
-    margin: 0 0 0 -3px;
+    margin: 0 0 0 -4px;
     width: 8em;
-    height: 100%;
     border-style: none;
-    font-size: 16px;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+input[type="search" i] {
+    width: 18em; /* règle spécifique pour Chrome */
+    border-style: inset;
+    border: 1px solid #f2f2f2;
+    text-indent: 0.5em;
+}
+input[type="submit" i] {
+    width: 8em; /* règle spécifique pour Chrome */
+    margin: 0 0 0 -4px;
+    border-style: none;
     color: white;
     background-color: #0065FC;
     border-radius: 0 15px 15px 0;
