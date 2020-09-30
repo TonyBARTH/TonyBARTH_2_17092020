@@ -281,3 +281,31 @@ aside {
         height: 16em;
     }
 }
+
+@media (max-width: 800px) {
+    .Vignette-logement-standard {
+        width: 43%;
+    }
+    .Vignette-logement-standard img {
+        height: 9em;
+    }
+    .Vignette-logement-populaire img {
+        width: 45%;
+        height: 10em;
+    }
+    #Footer {
+        flex-direction: column;
+        padding: 8% 5% 8% 10%;
+    }
+    #A-propos {
+        margin: auto;
+        padding-bottom: 2em;
+    }
+    #Nos-hébergements {
+        margin: auto;
+        padding-bottom: 2em;
+    }
+    #Assistance {
+        margin: auto;
+    }
+}
