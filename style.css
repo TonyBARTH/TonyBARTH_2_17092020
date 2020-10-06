@@ -97,6 +97,7 @@ nav ul li:hover{
 #Moteur-de-recherche {
     margin: 0 1.2em 0 1.2em;
     display: flex;
+    position: relative;
 }
 
 #Moteur-de-recherche p {
@@ -104,9 +105,6 @@ nav ul li:hover{
     margin-block-end: 0; 
 }
 
-#Filtres {
-    margin: 0 1.2em 0 1.2em;
-}
 #icone-map {
     font-size: 1.2em;
     text-align: center;
@@ -123,6 +121,13 @@ input {
     border-color: unset;
     border-style: unset;
 }
+
+#Filtres {
+    margin: 0 1.2em 0 1.2em;
+}
+
+/* CSS spécifique : */
+
 input:matches([type="search"]) {
     margin: 0;
     width: 18em;
@@ -140,13 +145,15 @@ input:matches([type="submit"]) {
     cursor: pointer;
 }
 input[type="search" i] {
-    width: 18em; /* règle spécifique pour Chrome */
+    /* règles spécifique pour Chrome */
+    width: 18em; 
     border-style: inset;
     border: 1px solid #f2f2f2;
     text-indent: 0.5em;
 }
 input[type="submit" i] {
-    width: 8em; /* règle spécifique pour Chrome */
+    /* règles spécifique pour Chrome */
+    width: 8em; 
     margin: 0 0 0 -4px;
     border-style: none;
     color: white;
@@ -155,9 +162,9 @@ input[type="submit" i] {
     cursor: pointer;
 }
 
-
-/* CSS spécifique : */
-
+#fa-icon-recherche {
+    display: none;
+}
 
 #en-tête-réservia {
     display: flex;
@@ -382,6 +389,31 @@ aside {
     #logo {
         width: 10em;
         padding: 0.5em 0 0 0;
+    }
+    input .text  {
+        display: none;
+    }
+    #Submit-button-desktop {
+        display: none;
+    }
+    input[type="search" i] {
+        /* règles spécifique pour Chrome */
+        width: 230%; 
+    }
+    input:matches([type="search"]) {
+        width: 170%;
+    }
+    #fa-icon-recherche {
+        display: inline-flex;
+        position: absolute;
+        top: 0px;
+        right: 0.1em;
+        color: white;
+        font-size: 20px;
+        background-color: #0065FC;
+        padding: 0.8em;
+        border-radius: 15px;
+        cursor: pointer;
     }
     #Classement-Marseille {
         flex-direction: column;
