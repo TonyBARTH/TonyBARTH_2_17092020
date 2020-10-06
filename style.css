@@ -44,11 +44,13 @@ h3 {
 }
 p {
     font-size: 14px;
-    line-height: 0.5;
 }
 
 header {
-    margin: 0 1.2em 0 1.2em;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 999;
 }
 
 ul {
@@ -91,6 +93,9 @@ a:hover {
 nav ul li:hover{
     border-top: 3px solid #0065FC;
 }
+nav ul li:active{
+    border-top: 3px solid #0065FC;
+}
 
 /* CSS HEADER : */
 
@@ -103,6 +108,7 @@ nav ul li:hover{
 
 #logo {
     width: 8em;
+    margin-left: 0.5em;
 }
 
 #Connexion {
@@ -113,6 +119,9 @@ nav ul li:hover{
 }
 #Connexion a {
     color: #0065FC;
+}
+#Baseline {
+    margin: 1em;
 }
 
 #Moteur-de-recherche {
