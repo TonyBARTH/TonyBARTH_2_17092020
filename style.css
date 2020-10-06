@@ -161,11 +161,6 @@ input {
     border-color: unset;
     border-style: unset;
 }
-
-#Filtres {
-    margin: 0 1.2em 0 1.2em;
-}
-
 input:matches([type="search"]) {
     margin: 0;
     width: 18em;
@@ -202,6 +197,61 @@ input[type="submit" i] {
 
 #fa-icon-recherche {
     display: none;
+}
+
+
+/* CSS FILTRES : */
+
+#Filtres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em 1.2em 1em 1.2em;
+    font-weight: bold;
+    font-size: 16px;
+}
+#Titre-section-filtres {
+    margin-right: 1em;
+}
+.Options-de-recherche {
+    display: flex;
+    align-items: center;
+    margin: 0.8em 1.2em 0.8em 0;
+    border: 2px solid #dddddd;
+    border-radius: 25px;
+}
+#Compteur {
+    display: flex;
+    align-items: center;
+    margin: 0 1.2em 0 1.2em;
+}
+#Filtres .fas {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #0065FC;
+    padding: 0.5em;
+    height: 1.2em;
+    width: 1.2em;
+    background: #c8deff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#Compteur .fas{
+    margin-right: 1em;
+    text-align: center;
+    font-size: 12px;
+    color: #0065FC;
+    padding: 0.5em;
+    height: 1.2em;
+    width: 1.2em;
+    border: 1px solid #c8deff;
+    border-radius: 25px;
+}
+.Label-filtre {
+    padding: 0.6em 1em 0.6em 0.6em;
+    cursor: pointer;
 }
 
 
@@ -391,6 +441,9 @@ aside {
 }
 
 @media (max-width: 800px) {
+    #Titre-section-filtres {
+        width: 100%;
+    }
     .Vignette-logement-standard {
         width: 43%;
     }
