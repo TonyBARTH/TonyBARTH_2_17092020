@@ -333,32 +333,32 @@ aside {
 }
 
 .Vignette-activité:nth-child(1) {
-    background: center / cover no-repeat url("Images/activites/small/vieux-port-xs.jpg");
+    background: center / cover no-repeat url("images/activites/small/vieux-port-xs.jpg");
     position: relative;
     height: 100%;
 }
 .Vignette-activité:nth-child(2) {
-    background: center / cover no-repeat url("Images/activites/small/fort-de-pomègues-xs.jpg");
+    background: center / cover no-repeat url("images/activites/small/fort-de-pomègues-xs.jpg");
     position: relative;
     height: 54%;
 }
 .Vignette-activité:nth-child(3) {
-    background: center / cover no-repeat url("Images/activites/small/ile-du-frioul-xs.jpg");
+    background: center / cover no-repeat url("images/activites/small/ile-du-frioul-xs.jpg");
     position: relative;
     height: 38%;
 }
 .Vignette-activité:nth-child(4) {
-    background: center / cover no-repeat url("Images/activites/small/parc-des-calanques-xs.jpg");
+    background: center / cover no-repeat url("images/activites/small/parc-des-calanques-xs.jpg");
     position: relative;
     height: 100%;
 }
 .Vignette-activité:nth-child(5) {
-    background: center / cover no-repeat url("Images/activites/small/notre-dame-de-la-garde-xs.jpg");
+    background: center / cover no-repeat url("images/activites/small/notre-dame-de-la-garde-xs.jpg");
     position: relative;
     height: 46%;
 }
 .Vignette-activité:nth-child(6) {
-    background: center / cover no-repeat url("Images/activites/small/parc-longchamp-xs.jpg");
+    background: center / cover no-repeat url("images/activites/small/parc-longchamp-xs.jpg");
     position: relative;
     height: 46%;
 }
