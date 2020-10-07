@@ -134,6 +134,8 @@ nav ul li:active{
     margin: 1em;
 }
 
+/* MOTEUR DE RECHERCHE : */
+
 #Moteur-de-recherche {
     margin: 0 1.2em 0 1.2em;
     display: flex;
@@ -221,7 +223,7 @@ input[type="submit" i] {
     border-radius: 25px;
 }
 .Options-de-recherche:hover {
-    background: #e8f2ff;
+    background: #eef4fd;
 }
 #Compteur {
     display: flex;
@@ -237,7 +239,7 @@ input[type="submit" i] {
     padding: 0.5em;
     height: 1.2em;
     width: 1.2em;
-    background: #c8deff;
+    background: #DEEBFF;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -249,7 +251,7 @@ input[type="submit" i] {
     padding: 0.5em;
     height: 1.2em;
     width: 1.2em;
-    border: 1px solid #c8deff;
+    border: 1px solid #DEEBFF;
     border-radius: 25px;
 }
 .Label-filtre {
@@ -387,6 +389,7 @@ aside {
     margin-left: 1.2em;
 }    
 
+/* FOOTER : */
 
 #Footer {
     display: flex;
@@ -405,6 +408,7 @@ aside {
 #Assistance {
     width: 15em;
 }
+
 
 /* CSS RESPONSIVE : */
 
