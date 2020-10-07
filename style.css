@@ -44,6 +44,10 @@ h3 {
 }
 p {
     font-size: 14px;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
 }
 
 header {
@@ -96,6 +100,12 @@ nav ul li:hover{
 nav ul li:active{
     border-top: 3px solid #0065FC;
 }
+
+.fa-icon-stars {
+    font-size: 12px;
+    color: #0065FC;
+}
+
 
 /* CSS HEADER : */
 
@@ -151,11 +161,6 @@ input {
     border-color: unset;
     border-style: unset;
 }
-
-#Filtres {
-    margin: 0 1.2em 0 1.2em;
-}
-
 input:matches([type="search"]) {
     margin: 0;
     width: 18em;
@@ -192,6 +197,61 @@ input[type="submit" i] {
 
 #fa-icon-recherche {
     display: none;
+}
+
+
+/* CSS FILTRES : */
+
+#Filtres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em 1.2em 1em 1.2em;
+    font-weight: bold;
+    font-size: 16px;
+}
+#Titre-section-filtres {
+    margin-right: 1em;
+}
+.Options-de-recherche {
+    display: flex;
+    align-items: center;
+    margin: 0.8em 1.2em 0.8em 0;
+    border: 2px solid #dddddd;
+    border-radius: 25px;
+}
+#Compteur {
+    display: flex;
+    align-items: center;
+    margin: 0 1.2em 0 1.2em;
+}
+#Filtres .fas {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    color: #0065FC;
+    padding: 0.5em;
+    height: 1.2em;
+    width: 1.2em;
+    background: #c8deff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+#Compteur .fas{
+    margin-right: 1em;
+    text-align: center;
+    font-size: 12px;
+    color: #0065FC;
+    padding: 0.5em;
+    height: 1.2em;
+    width: 1.2em;
+    border: 1px solid #c8deff;
+    border-radius: 25px;
+}
+.Label-filtre {
+    padding: 0.6em 1em 0.6em 0.6em;
+    cursor: pointer;
 }
 
 
@@ -302,16 +362,21 @@ aside {
     position: relative;
     height: 46%;
 }
-
-.Description-nom-tarif {
+.Nom-tarif-avis {
+    margin: 7px 10px;
+}
+.Nom-lieu-activité{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3em;
     background-color: white;
     position: absolute;
     bottom: 0px;
     left: 0px;
-    width: 100%;
     border-radius: 0 0 20px 20px;
 }
-.Description-nom-tarif h3 {
+.Nom-lieu-activité h3 {
     margin-left: 1.2em;
 }    
 
@@ -376,6 +441,9 @@ aside {
 }
 
 @media (max-width: 800px) {
+    #Titre-section-filtres {
+        width: 100%;
+    }
     .Vignette-logement-standard {
         width: 43%;
     }
@@ -459,6 +527,16 @@ aside {
         border-radius: 15px;
         cursor: pointer;
     }
+    #Affichage-résultats {
+        flex-direction: column-reverse;
+    }
+    aside {
+        margin: 1.2em 0;
+        border-radius: 0;
+    }
+    #Hébergements-Marseille {
+        background-color: white;
+    }
     #Classement-Marseille {
         flex-direction: column;
     }
@@ -466,15 +544,12 @@ aside {
         width: 97%;
     }
     .Vignette-logement-standard img {
-        height: 12em;
-    }
-    .Vignette-logement-populaire {
-        flex-direction: column;
+        height: 8em;
     }
     .Vignette-logement-populaire img {
-        width: 100%;
-        height: 10em;
-        border-radius: 10px 10px 0 0;
+        width: 40%;
+        height: 8em;
+        border-radius: 10px 0 0 10px;
     }
     #Affichage-activités {
         height: 120em;
