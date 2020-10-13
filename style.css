@@ -90,6 +90,7 @@ a {
     color: rgb(39, 39, 39);
     text-decoration: none;
 }
+
 a:hover {
     color: #0065FC;
 }
@@ -99,6 +100,19 @@ nav ul li:hover{
 }
 nav ul li:active{
     border-top: 3px solid #0065FC;
+}
+
+#Position-ancre-logements {
+    display: block;
+    position: relative;
+    top: -90px;
+    visibility: hidden;
+}
+#Position-ancre-activités {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
 }
 
 .fa-icon-stars {
