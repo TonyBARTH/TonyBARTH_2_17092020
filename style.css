@@ -50,6 +50,13 @@ p {
     margin-bottom: 0.4em;
 }
 
+.fa-icon-stars {
+    font-size: 12px;
+    color: #0065FC;
+}
+
+/* CSS HEADER ET NAVIGATION : */
+
 header {
     position: sticky;
     top: 0px;
@@ -113,11 +120,6 @@ nav ul li:active{
     position: relative;
     top: -70px;
     visibility: hidden;
-}
-
-.fa-icon-stars {
-    font-size: 12px;
-    color: #0065FC;
 }
 
 
@@ -274,7 +276,7 @@ input[type="submit" i] {
 }
 
 
-/* CSS DISPLAY RESULTS : */
+/* CSS DISPLAY RESULTATS LOGEMENTS STANDARD : */
 
 #Affichage-résultats {
     display: flex;
@@ -320,6 +322,7 @@ aside {
     object-fit: cover;
 }
 
+/* CSS DISPLAY RESULTATS LOGEMENTS POPULAIRES : */
 
 #Titre-section-populaire {
     display: flex;
@@ -332,6 +335,7 @@ aside {
 #icone-expand {
     font-size: 22px;
     margin-bottom: 0.5em;
+    cursor: pointer;
 }
 
 .Vignette-logement-populaire {
