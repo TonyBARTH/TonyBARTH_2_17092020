@@ -384,7 +384,7 @@ aside {
     height: 100%;
 }
 .Vignette-activité:nth-child(2) {
-    background: center / cover no-repeat url("images/activites/small/fort-de-pomègues-xs.jpg");
+    background: center / cover no-repeat url("images/activites/small/fort-de-pomegues-xs.jpg");
     position: relative;
     height: 54%;
 }
