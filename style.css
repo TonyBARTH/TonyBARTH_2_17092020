@@ -440,7 +440,7 @@ aside {
 
 /* CSS RESPONSIVE : */
 
-@media (max-width: 1050px) {
+@media all and (max-width: 1050px) {
     #Affichage-résultats {
         flex-direction: column;
     }
@@ -479,7 +479,10 @@ aside {
     }
 }
 
-@media (max-width: 800px) {
+@media all and (max-width: 800px) {
+    #bloc-page {
+        width: auto;
+    }
     #Titre-section-filtres {
         width: 100%;
     }
@@ -510,7 +513,95 @@ aside {
     }
 }
 
-@media (max-width: 550px) {
+@media all and (max-width: 550px) {
+    #bloc-page {
+        width: auto;
+    }
+    #logo {
+        width: 10em;
+        padding: 0.5em 0 0 0;
+    }
+    nav {
+        width: 100%;
+        height: 3em;
+    }
+    nav ul {
+        width: 100%;
+        height: 100%;
+    }
+    nav ul li {
+        width: 100%;
+        border-top: none;
+        border-bottom: 3px solid transparent;
+        box-sizing: border-box;
+    }
+    nav ul li:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    #Inscription {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        margin-top: 2.5em;
+    }
+    input .text  {
+        display: none;
+    }
+    #Submit-button-desktop {
+        display: none;
+    }
+    input[type="search"] {
+        width: 230%; 
+    }
+    #fa-icon-recherche {
+        display: inline-flex;
+        position: absolute;
+        top: 0px;
+        right: 0.1em;
+        color: white;
+        font-size: 20px;
+        background-color: #0065FC;
+        padding: 0.8em;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    #Affichage-résultats {
+        flex-direction: column-reverse;
+    }
+    aside {
+        margin: 1.2em 0;
+        border-radius: 0;
+    }
+    #Hébergements-Marseille {
+        background-color: white;
+    }
+    #Classement-Marseille {
+        flex-direction: column;
+    }
+    .Vignette-logement-standard {
+        width: 97%;
+    }
+    .Vignette-logement-standard img {
+        height: 8em;
+    }
+    .Vignette-logement-populaire img {
+        width: 40%;
+        height: 8em;
+        border-radius: 10px 0 0 10px;
+    }
+    #Affichage-activités {
+        height: 120em;
+    }
+    .Vignette-activité {
+        height: 18em !important;
+    }
+}
+
+@media all and (max-device-width: 480px) {
+    #bloc-page {
+        width: auto;
+    }
     #logo {
         width: 10em;
         padding: 0.5em 0 0 0;
