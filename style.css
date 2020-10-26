@@ -54,6 +54,15 @@ p {
     font-size: 12px;
     color: #0065FC;
 }
+#unfilled-star {
+    color: #dddddd;
+}
+.read-more-link {
+    font-weight: bold; 
+    font-size: 18px; 
+    margin-left: 1em; 
+    cursor: pointer;
+}
 
 /* CSS HEADER ET NAVIGATION : */
 
