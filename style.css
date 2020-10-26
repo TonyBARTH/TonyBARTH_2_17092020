@@ -44,8 +44,8 @@ h3 {
 }
 p {
     font-size: 14px;
-    margin-block-start: 0.4em;
-    margin-block-end: 0.4em;
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
 }
@@ -68,7 +68,6 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    padding-inline-start: 0;
 }
 
 nav {
@@ -137,13 +136,13 @@ nav ul li:active{
     margin-left: 0.5em;
 }
 
-#Connexion {
+#Inscription {
     display: flex;
     align-items: center;
     font-weight: 700;
     border-top: 5px solid transparent;
 }
-#Connexion a {
+#Inscription a {
     color: #0065FC;
 }
 #Baseline {
@@ -158,8 +157,8 @@ nav ul li:active{
     position: relative;
 }
 #Moteur-de-recherche p {
-    margin-block-start: 0;
-    margin-block-end: 0; 
+    margin-left: 0;
+    margin-right: 0; 
 }
 
 #icone-map {
@@ -179,31 +178,14 @@ input {
     border-color: unset;
     border-style: unset;
 }
-input:matches([type="search"]) {
-    margin: 0;
-    width: 18em;
-    border-style: inset;
-    border: 1px solid #f2f2f2;
-}
-input:matches([type="submit"]) {
-    padding: 0;
-    margin: 0 0 0 -4px;
-    width: 8em;
-    border-style: none;
-    color: white;
-    background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
-}
-input[type="search" i] {
-    /* règles spécifique pour Chrome */
+
+input[type="search"] {
     width: 18em; 
     border-style: inset;
     border: 1px solid #f2f2f2;
     text-indent: 0.5em;
 }
-input[type="submit" i] {
-    /* règles spécifique pour Chrome */
+input[type="submit"] {
     width: 8em; 
     margin: 0 0 0 -4px;
     border-style: none;
@@ -537,14 +519,12 @@ aside {
         border-top: none;
         border-bottom: 3px solid transparent;
         box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
     }
     nav ul li:hover {
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
-    #Connexion {
+    #Inscription {
         position: absolute;
         top: 0px;
         right: 0px;
@@ -556,12 +536,8 @@ aside {
     #Submit-button-desktop {
         display: none;
     }
-    input[type="search" i] {
-        /* règles spécifique pour Chrome */
+    input[type="search"] {
         width: 230%; 
-    }
-    input:matches([type="search"]) {
-        width: 170%;
     }
     #fa-icon-recherche {
         display: inline-flex;
