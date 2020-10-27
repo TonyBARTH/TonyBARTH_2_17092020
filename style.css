@@ -552,7 +552,7 @@ aside {
         display: none;
     }
     input[type="search"] {
-        width: 230%; 
+        width: 100%; 
     }
     #fa-icon-recherche {
         display: inline-flex;
