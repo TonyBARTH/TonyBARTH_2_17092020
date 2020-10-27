@@ -299,7 +299,6 @@ aside {
 .Vignette-logement-standard {
     width: 28%;
     background-color: white;
-    border: 5px solid white;
     border-radius: 15px;
     margin-bottom: 2em;
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
@@ -307,7 +306,8 @@ aside {
 }
 
 .Vignette-logement-standard img {
-    width: 100%;
+    width: 95%;
+    margin: 2.5%;
     height: 7em;
     border-radius: 10px 10px 0 0;
     object-fit: cover;
@@ -333,7 +333,6 @@ aside {
     display: flex;
     position: relative;
     background-color: white;
-    border: 5px solid white;
     border-radius: 15px;
     margin-bottom: 2em;
     box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.1);
@@ -342,6 +341,7 @@ aside {
 .Vignette-logement-populaire img {
     width: 7em;
     height: 8em;
+    margin: 5px;
     border-radius: 10px 0px 0 10px;
     object-fit: cover;
 }
@@ -400,7 +400,7 @@ aside {
     height: 46%;
 }
 .Nom-tarif-avis {
-    margin: 7px 10px;
+    margin: 5px 10px 10px 10px;
 }
 .Nom-lieu-activité{
     display: flex;
